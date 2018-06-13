@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/temperatureLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="156dp"
+        android:textSize="30dp"
+        android:text="Temp: "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/cancelCon"
+        android:layout_width="113dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="14dp"
+        android:layout_marginStart="15dp"
+        android:text="Cancel Connection"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="108dp"
+        tools:layout_editor_absoluteY="298dp" />
+
+    <Button
+        android:id="@+id/visible"
+        android:layout_width="76dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/cancelCon"
+        android:layout_centerHorizontal="true"
+        android:text="Visible(400s)"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="134dp"
+        tools:layout_editor_absoluteY="140dp" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="39dp"
+        android:text="Termostate Simulator"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/temperatureValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/temperatureLabel"
+        android:layout_marginEnd="123dp"
+        android:text="0.00"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/newTempValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/newTempEdit"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="75dp"
+        android:text="New Temp:"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/newTempEdit"
+        android:layout_width="72dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="215dp"
+        android:layout_toEndOf="@+id/temperatureLabel"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="228dp"
+        android:background="@color/colorPrimary" />
+
+    <Button
+        android:id="@+id/configureTemp"
+        android:layout_width="136dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/cancelCon"
+        android:text="Configure Temperature" />
+
+</RelativeLayout>
